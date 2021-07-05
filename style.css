@@ -1,8 +1,32 @@
 * {
-  background-color: blue;
+  padding: 10px;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.topContent h1 {
-  color: brown;
-  font-weight: 900;
+.topContent img {
+  height: 80px;
+  width: 240px;
+}
+
+p {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+li {
+  list-style: none;
+  display: none;
+}
+
+.topContent {
+  display: flex;
+  justify-content: space-around;
+}
+
+.dropDownContent {
+  /* display: none; */
+  border: 1px solid black;
+  border-radius: 5px;
+  line-height: 20px;
+  box-shadow: 5px 5px 10px black;
 }
