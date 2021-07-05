@@ -2,11 +2,12 @@
   padding: 10px;
   margin: 0;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .topContent img {
   height: 80px;
-  width: 240px;
+  width: 300px;
 }
 
 p {
@@ -20,13 +21,43 @@ li {
 
 .topContent {
   display: flex;
-  justify-content: space-around;
+}
+
+.titleDropDown {
+  display: flex;
+  width: 300px;
+}
+
+.titleDropDown p {
+  font-size: 14px;
+  padding-left: 0px;
+  padding-top: 8px;
+  user-select: none;
+}
+
+.techDrop:hover,
+.refDrop:hover,
+.feedDrop:hover {
+  cursor: pointer;
+}
+
+.signIn {
+  font-size: 14px;
 }
 
 .dropDownContent {
-  /* display: none; */
+  display: none;
   border: 1px solid black;
   border-radius: 5px;
   line-height: 20px;
   box-shadow: 5px 5px 10px black;
+}
+
+.dropDownContent {
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+.show {
+  display: block;
 }
