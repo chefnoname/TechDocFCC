@@ -10,6 +10,10 @@ const feedDropdown = document.querySelector(".feedDrop");
 const feedContentBox = document.querySelector(".feedContent");
 const feedCaret = document.querySelector(".feedCaret");
 
+const firstTech = document.querySelector(".firstTech");
+const firstRef = document.querySelector(".firstRef");
+const firstFeed = document.querySelector(".firstFeed");
+
 techDropdown.addEventListener("click", () => {
   techContentBox.classList.toggle("show");
   techCaret.classList.toggle("fa-caret-right");
@@ -21,7 +25,15 @@ techDropdown.addEventListener("click", () => {
   ) {
     refContentBox.classList.remove("show");
     feedContentBox.classList.remove("show");
+
+    refCaret.classList.toggle("fa-caret-right");
+    refCaret.classList.toggle("fa-caret-down");
+
+    feedCaret.classList.toggle("fa-caret-right");
+    feedCaret.classList.toggle("fa-caret-down");
   }
+
+  firstTech.classList.add("firstTech");
 });
 
 refDropdown.addEventListener("click", () => {
@@ -35,7 +47,15 @@ refDropdown.addEventListener("click", () => {
   ) {
     techContentBox.classList.remove("show");
     feedContentBox.classList.remove("show");
+
+    techCaret.classList.toggle("fa-caret-right");
+    techCaret.classList.toggle("fa-caret-down");
+
+    feedCaret.classList.toggle("fa-caret-right");
+    feedCaret.classList.toggle("fa-caret-down");
   }
+
+  firstRef.classList.add("firstRef");
 });
 
 feedDropdown.addEventListener("click", () => {
@@ -49,7 +69,25 @@ feedDropdown.addEventListener("click", () => {
   ) {
     techContentBox.classList.remove("show");
     refContentBox.classList.remove("show");
+
+    techCaret.classList.toggle("fa-caret-right");
+    techCaret.classList.toggle("fa-caret-down");
+
+    refCaret.classList.toggle("fa-caret-right");
+    refCaret.classList.toggle("fa-caret-down");
   }
+
+  firstFeed.classList.add("firstFeed");
 });
 
-console.log(refContentBox.classList.contains("show"));
+firstTech.addEventListener("mouseout", () => {
+  firstTech.classList.remove("firstTech");
+});
+
+firstRef.addEventListener("mouseout", () => {
+  firstRef.classList.remove("firstRef");
+});
+
+firstFeed.addEventListener("mouseout", () => {
+  firstFeed.classList.remove("firstFeed");
+});

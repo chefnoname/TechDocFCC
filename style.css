@@ -94,7 +94,10 @@ li {
   cursor: pointer;
 }
 
-.dropDownContent p:hover {
+.dropDownContent p:hover,
+.firstTech,
+.firstRef,
+.firstFeed {
   background-color: rgba(54, 85, 224, 0.904);
   color: white;
   position: relative;
@@ -139,4 +142,21 @@ li {
 
 .pathwayStrip {
   background-color: #eee;
+  padding: 15px;
+  display: flex;
+}
+
+.pathwayStrip p,
+.pathwayStrip i {
+  margin-right: 10px;
+}
+
+.pathwayStrip img {
+  height: 40px;
+  width: 40px;
+}
+
+.changeLang {
+  display: flex;
+  /* justify-content: space-around; */
 }
