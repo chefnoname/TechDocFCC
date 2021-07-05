@@ -14,16 +14,42 @@ techDropdown.addEventListener("click", () => {
   techContentBox.classList.toggle("show");
   techCaret.classList.toggle("fa-caret-right");
   techCaret.classList.toggle("fa-caret-down");
+
+  if (
+    refContentBox.classList.contains("show") ||
+    feedContentBox.classList.contains("show")
+  ) {
+    refContentBox.classList.remove("show");
+    feedContentBox.classList.remove("show");
+  }
 });
 
 refDropdown.addEventListener("click", () => {
   refContentBox.classList.toggle("show");
   refCaret.classList.toggle("fa-caret-right");
   refCaret.classList.toggle("fa-caret-down");
+
+  if (
+    techContentBox.classList.contains("show") ||
+    feedContentBox.classList.contains("show")
+  ) {
+    techContentBox.classList.remove("show");
+    feedContentBox.classList.remove("show");
+  }
 });
 
 feedDropdown.addEventListener("click", () => {
   feedContentBox.classList.toggle("show");
   feedCaret.classList.toggle("fa-caret-right");
   feedCaret.classList.toggle("fa-caret-down");
+
+  if (
+    techContentBox.classList.contains("show") ||
+    refContentBox.classList.contains("show")
+  ) {
+    techContentBox.classList.remove("show");
+    refContentBox.classList.remove("show");
+  }
 });
+
+console.log(refContentBox.classList.contains("show"));
