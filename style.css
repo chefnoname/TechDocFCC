@@ -7,7 +7,7 @@
 
 .topContent img {
   height: 80px;
-  width: 300px;
+  width: 500px;
 }
 
 p {
@@ -41,23 +41,66 @@ li {
   cursor: pointer;
 }
 
-.signIn {
-  font-size: 14px;
-}
-
 .dropDownContent {
   display: none;
+  font-size: 14px;
+  margin-left: 20px;
+  font-weight: 900;
+  color: rgba(54, 85, 224, 0.904);
   border: 1px solid black;
   border-radius: 5px;
   line-height: 20px;
   box-shadow: 5px 5px 10px black;
+  user-select: none;
+  position: absolute;
+  z-index: 10;
 }
 
-.dropDownContent {
-  font-size: 14px;
-  margin-left: 20px;
+.dropDownContent:hover {
+  cursor: pointer;
+}
+
+.dropDownContent p:hover {
+  background-color: rgba(54, 85, 224, 0.904);
+  color: white;
+  position: relative;
 }
 
 .show {
   display: block;
+}
+
+.referenceGuidesDropdown {
+  width: 400px;
+}
+
+.feedbackDropdown {
+}
+
+.searchMDNBox {
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 100px;
+}
+
+.searchMDNBox input {
+  margin-top: 10px;
+  width: 900px;
+  height: 40px;
+}
+
+.searchMDNBox i {
+  position: relative;
+  right: 120px;
+  top: 9px;
+  font-size: 22px;
+  width: 100px;
+  z-index: 10;
+}
+
+.signIn {
+  font-size: 14px;
+  width: 200px;
+  margin-top: 10px;
 }
