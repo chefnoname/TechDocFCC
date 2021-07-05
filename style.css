@@ -1,13 +1,14 @@
 * {
-  padding: 10px;
+  padding: 0;
   margin: 0;
   box-sizing: border-box;
   overflow: hidden;
 }
 
 .topContent img {
-  height: 80px;
+  height: 60px;
   width: 500px;
+  margin-right: 30px;
 }
 
 p {
@@ -21,18 +22,33 @@ li {
 
 .topContent {
   display: flex;
+  margin-bottom: 50px;
+  padding: 30px;
 }
 
 .titleDropDown {
   display: flex;
   width: 300px;
+  margin-top: 25px;
 }
 
 .titleDropDown p {
-  font-size: 14px;
-  padding-left: 0px;
-  padding-top: 8px;
+  font-size: 16px;
+  padding-left: 5px;
   user-select: none;
+}
+
+.titleDropDown i {
+  padding-top: 5px;
+}
+
+.refDrop {
+  margin-left: 60px;
+  width: 500px;
+}
+
+.feedDrop {
+  margin-left: 50px;
 }
 
 .techDrop:hover,
@@ -44,16 +60,33 @@ li {
 .dropDownContent {
   display: none;
   font-size: 14px;
-  margin-left: 20px;
+  /* margin-left: 20px; */
   font-weight: 900;
   color: rgba(54, 85, 224, 0.904);
   border: 1px solid black;
   border-radius: 5px;
-  line-height: 20px;
+  line-height: 35px;
   box-shadow: 5px 5px 10px black;
   user-select: none;
   position: absolute;
   z-index: 10;
+  height: 450px;
+  width: 200px;
+  padding: 15px 0px;
+}
+
+.dropDownContent p {
+  padding: 5px;
+}
+
+.refContent {
+  height: 350px;
+  margin-left: 60px;
+}
+
+.feedContent {
+  height: 200px;
+  margin-left: 50px;
 }
 
 .dropDownContent:hover {
@@ -70,19 +103,13 @@ li {
   display: block;
 }
 
-.referenceGuidesDropdown {
-  width: 400px;
-}
-
-/* 
-.feedbackDropdown {
-} */
-
 .searchMDNBox {
+  margin-top: 5px;
+  /* background-color: violet; */
   width: 1000px;
   display: flex;
-  justify-content: space-between;
-  margin-left: 100px;
+  justify-content: space-around;
+  margin-left: 20px;
 }
 
 .searchMDNBox input {
@@ -90,19 +117,26 @@ li {
   border-color: black;
   width: 900px;
   height: 40px;
+  padding: 10px;
+  font-size: 16px;
 }
 
 .searchMDNBox i {
   position: relative;
   right: 120px;
-  top: 9px;
+  top: 17px;
   font-size: 22px;
   width: 100px;
   z-index: 10;
 }
 
 .signIn {
-  font-size: 14px;
+  font-size: 16px;
   width: 200px;
-  margin-top: 10px;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+.pathwayStrip {
+  background-color: #eee;
 }
