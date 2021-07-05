@@ -74,8 +74,9 @@ li {
   width: 400px;
 }
 
+/* 
 .feedbackDropdown {
-}
+} */
 
 .searchMDNBox {
   width: 1000px;
@@ -86,6 +87,7 @@ li {
 
 .searchMDNBox input {
   margin-top: 10px;
+  border-color: black;
   width: 900px;
   height: 40px;
 }
