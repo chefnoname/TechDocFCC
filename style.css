@@ -90,6 +90,7 @@ a:hover {
   height: 450px;
   width: 200px;
   padding: 15px 0px;
+  overflow: hidden;
 }
 
 .dropDownContent p {
@@ -223,19 +224,31 @@ a:hover {
 
 .relatedTopics p {
   font-family: "Titillium Web", sans-serif;
-  color: blue;
+  color: rgb(0, 68, 255);
   margin-bottom: 10px;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .relatedTopics li {
   font-family: "Play", sans-serif;
-  color: blue;
+  color: rgb(0, 68, 255);
   margin-left: 25px;
   font-size: 14px;
+  margin-top: 10px;
 }
 
 .rightSideContent {
   flex: 3;
-  background-color: indigo;
+  padding: 30px;
+}
+
+.rightSideContent h1 {
+  font-size: 45px;
+  margin-bottom: 25px;
+}
+
+.rightSideContent p {
+  font-weight: 300;
+  width: 90%;
+  font-size: 16px;
 }
