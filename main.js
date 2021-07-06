@@ -1,13 +1,12 @@
 const codeMirrorEditor = document.querySelector(".codeMirrorTextarea");
 
 let editor = CodeMirror(codeMirrorEditor, {
-  firstLineNumber: 1,
-  theme: "blackboard",
-  showCursorWhenSelecting: true,
+  value:
+    "const animals = ['pigs', 'goats', 'sheep'];\n\nconst count = animals.push('cows');\nconsole.log(count);\n// expected output: 4\nconsole.log(animals)\n// expected output: Array ['pigs', 'goats', 'sheep', 'cows']\n\nanimals.push('chickens', 'cats', 'dogs')\nconsole.log(animals);\n// expected output: Array ['pigs', 'goats', 'sheep', 'cows', 'cats', 'dogs']\n",
+  mode: "javascript",
+  theme: "mdn-like",
   lineNumbers: true,
 });
-
-console.log(editor);
 
 const techDropdown = document.querySelector(".techDrop");
 const techContentBox = document.querySelector(".techContent");
