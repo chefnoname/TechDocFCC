@@ -1,10 +1,10 @@
 const codeMirrorEditor = document.querySelector(".codeMirrorTextarea");
 
 let editor = CodeMirror(codeMirrorEditor, {
-  lineNumbers: true,
   firstLineNumber: 1,
   theme: "blackboard",
   showCursorWhenSelecting: true,
+  lineNumbers: true,
 });
 
 console.log(editor);
