@@ -1,3 +1,14 @@
+const codeMirrorEditor = document.querySelector(".codeMirrorTextarea");
+
+let editor = CodeMirror(codeMirrorEditor, {
+  lineNumbers: true,
+  firstLineNumber: 1,
+  theme: "blackboard",
+  showCursorWhenSelecting: true,
+});
+
+console.log(editor);
+
 const techDropdown = document.querySelector(".techDrop");
 const techContentBox = document.querySelector(".techContent");
 const techCaret = document.querySelector(".techCaret");
