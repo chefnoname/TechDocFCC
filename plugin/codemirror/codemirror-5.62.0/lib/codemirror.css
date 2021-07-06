@@ -6,6 +6,7 @@
   height: 300px;
   color: black;
   direction: ltr;
+  line-height: 21px;
 }
 
 /* PADDING */
@@ -36,8 +37,10 @@
   padding: 0 3px 0 5px;
   min-width: 20px;
   text-align: right;
-  color: #999;
+  color: #333;
   white-space: nowrap;
+  line-height: 20px;
+  font-size: 14px;
 }
 
 .CodeMirror-guttermarker {
