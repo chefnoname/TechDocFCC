@@ -19,15 +19,15 @@ techDropdown.addEventListener("click", () => {
   techCaret.classList.toggle("fa-caret-right");
   techCaret.classList.toggle("fa-caret-down");
 
-  if (
-    refContentBox.classList.contains("show") ||
-    feedContentBox.classList.contains("show")
-  ) {
+  if (refContentBox.classList.contains("show")) {
     refContentBox.classList.remove("show");
-    feedContentBox.classList.remove("show");
 
     refCaret.classList.toggle("fa-caret-right");
     refCaret.classList.toggle("fa-caret-down");
+  }
+
+  if (feedContentBox.classList.contains("show")) {
+    feedContentBox.classList.remove("show");
 
     feedCaret.classList.toggle("fa-caret-right");
     feedCaret.classList.toggle("fa-caret-down");
@@ -41,15 +41,15 @@ refDropdown.addEventListener("click", () => {
   refCaret.classList.toggle("fa-caret-right");
   refCaret.classList.toggle("fa-caret-down");
 
-  if (
-    techContentBox.classList.contains("show") ||
-    feedContentBox.classList.contains("show")
-  ) {
+  if (techContentBox.classList.contains("show")) {
     techContentBox.classList.remove("show");
-    feedContentBox.classList.remove("show");
 
     techCaret.classList.toggle("fa-caret-right");
     techCaret.classList.toggle("fa-caret-down");
+  }
+
+  if (feedContentBox.classList.contains("show")) {
+    feedContentBox.classList.remove("show");
 
     feedCaret.classList.toggle("fa-caret-right");
     feedCaret.classList.toggle("fa-caret-down");
@@ -63,15 +63,15 @@ feedDropdown.addEventListener("click", () => {
   feedCaret.classList.toggle("fa-caret-right");
   feedCaret.classList.toggle("fa-caret-down");
 
-  if (
-    techContentBox.classList.contains("show") ||
-    refContentBox.classList.contains("show")
-  ) {
+  if (techContentBox.classList.contains("show")) {
     techContentBox.classList.remove("show");
-    refContentBox.classList.remove("show");
 
     techCaret.classList.toggle("fa-caret-right");
     techCaret.classList.toggle("fa-caret-down");
+  }
+
+  if (refContentBox.classList.contains("show")) {
+    refContentBox.classList.remove("show");
 
     refCaret.classList.toggle("fa-caret-right");
     refCaret.classList.toggle("fa-caret-down");
@@ -91,3 +91,24 @@ firstRef.addEventListener("mouseout", () => {
 firstFeed.addEventListener("mouseout", () => {
   firstFeed.classList.remove("firstFeed");
 });
+
+// document.body.addEventListener("click", () => {
+//   if (
+//     techContentBox.classList.contains("show") ||
+//     refContentBox.classList.contains("show") ||
+//     feedContentBox.classList.contains("show")
+//   ) {
+//     techContentBox.classList.remove("show");
+//     refContentBox.classList.remove("show");
+//     feedContentBox.classList.remove("show");
+
+//     techCaret.classList.add("fa-caret-right");
+//     techCaret.classList.remove("fa-caret-down");
+
+//     // refCaret.classList.toggle("fa-caret-right");
+//     refCaret.classList.remove("fa-caret-down");
+
+//     // feedCaret.classList.toggle("fa-caret-right");
+//     feedCaret.classList.remove("fa-caret-down");
+//   }
+// });
