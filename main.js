@@ -105,3 +105,6 @@ let editor = CodeMirror(codeMirrorEditor, {
   theme: "mdn-like",
   lineNumbers: true,
 });
+
+// COPY TO CLIPBOARD FUNCTION
+const codeExample = document.querySelector(".syntax");

@@ -298,10 +298,20 @@ a:hover {
   background-color: #eee;
   height: 100px;
   border-left: 6px solid rgba(0, 83, 159, 0.65);
-  padding: 15px;
+  padding: 20px;
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+.syntax i {
+  font-size: 18px;
+  margin-right: 20px;
+}
+
+.syntaxCode {
   display: flex;
   flex-direction: column;
-  margin-top: 10px;
 }
 
 .syntax code {
@@ -336,4 +346,10 @@ a:hover {
 .returnValue code {
   color: blue;
   text-decoration: underline;
+}
+
+.description p {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 85%;
 }
