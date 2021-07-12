@@ -314,15 +314,42 @@ a:hover {
   flex-direction: column;
 }
 
+.syntaxCode code .pink {
+  color: #b54248;
+}
+
 .syntax code {
   margin-bottom: 5px;
   font-size: 16px;
-  /* color: #b54248; */
 }
 
 .syntax:hover i {
   color: black;
   cursor: pointer;
+}
+
+.copyClipboard i {
+  margin-bottom: 5px;
+  text-align: right;
+}
+
+.copyClipboard {
+  display: flex;
+  flex-direction: column;
+}
+
+.textBubble {
+  display: none;
+  background-color: black;
+  border-radius: 5px;
+  height: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.textBubble p {
+  color: white;
+  text-align: center;
 }
 
 .parameters h3,

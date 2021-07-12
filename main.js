@@ -109,15 +109,20 @@ let editor = CodeMirror(codeMirrorEditor, {
 // COPY TO CLIPBOARD FUNCTION
 const codeExample = document.querySelector(".syntaxCode");
 const clipboard = document.querySelector(".clipboard");
-const copyCode = document.querySelector(".syntaxCode");
+const textBubble = document.querySelector(".textBubble");
 
 clipboard.addEventListener("click", () => {
-  copyCode.select();
-  copyCode.setSelectionRange(0, 99999);
-
-  document.execCommand("copy");
-
-  alert("Copied the text: " + copyCode.value);
+  navigator.clipboard
+    .writeText(codeExample.innerText)
+    .then(() => {
+      textBubble.style.display = "block";
+      setTimeout(() => {
+        textBubble.style.display = "none";
+      }, 1000);
+    })
+    .catch(() => {
+      Alert("Failed ");
+    });
 });
 
-console.log(copyCode);
+console.log(codeExample.innerText);
