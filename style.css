@@ -4,8 +4,13 @@
   box-sizing: border-box;
 }
 
-h1 {
+h1,
+h2 {
   font-family: "Roboto Slab", serif;
+}
+
+h2 {
+  font-size: 30px;
 }
 
 p {
@@ -283,4 +288,18 @@ a:hover {
 .demoTitle p {
   font-weight: 500;
   margin-top: 5px;
+}
+
+.syntax {
+  background-color: #eee;
+  height: 100px;
+  border-left: 6px solid rgba(0, 83, 159, 0.65);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.syntax code {
+  margin-bottom: 5px;
+  font-size: 16px;
 }
