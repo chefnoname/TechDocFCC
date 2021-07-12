@@ -107,4 +107,17 @@ let editor = CodeMirror(codeMirrorEditor, {
 });
 
 // COPY TO CLIPBOARD FUNCTION
-const codeExample = document.querySelector(".syntax");
+const codeExample = document.querySelector(".syntaxCode");
+const clipboard = document.querySelector(".clipboard");
+const copyCode = document.querySelector(".syntaxCode");
+
+clipboard.addEventListener("click", () => {
+  copyCode.select();
+  copyCode.setSelectionRange(0, 99999);
+
+  document.execCommand("copy");
+
+  alert("Copied the text: " + copyCode.value);
+});
+
+console.log(copyCode);
