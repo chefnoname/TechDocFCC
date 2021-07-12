@@ -13,6 +13,11 @@ h2 {
   font-size: 30px;
 }
 
+h2:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 p {
   font-family: "Noto Sans JP", sans-serif;
 }
@@ -22,7 +27,7 @@ li {
   margin-bottom: 10px;
 }
 
-a {
+a:not(.bookmark) {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: lighter;
   text-decoration: none;
@@ -32,6 +37,18 @@ a {
 a:hover {
   cursor: pointer;
   text-decoration: underline;
+}
+
+.bookmark,
+.bookmark:hover,
+.bookmark:focus,
+.bookmark:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+code {
+  background-color: #eee;
 }
 
 .topContent {
@@ -375,9 +392,14 @@ a:hover {
   /* font-size: 14px; */
 }
 
-.returnValue code {
+.codeHighlight {
   color: blue;
   text-decoration: underline;
+}
+
+.codeHighlight:hover {
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .description p {
