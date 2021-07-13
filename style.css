@@ -372,13 +372,12 @@ code {
   background-color: black;
   border-radius: 5px;
   height: 30px;
-  /* padding-left: 5px;
-  padding-right: 5px; */
 }
 
 .textBubble p {
   color: white;
   text-align: center;
+  margin-top: 3px;
 }
 
 .parameters h3,
@@ -423,14 +422,20 @@ code {
 }
 
 .examples .syntax {
-  height: 130px;
+  height: 150px;
 }
 
-.exampleCode {
+.exampleCode,
+.mergingCode {
   display: flex;
   flex-direction: column;
 }
 
-.exampleBubble {
-  /* padding-bottom: 20px !important; */
+.exampleBubble p,
+.mergingBubble p {
+  margin-top: 3px !important;
+}
+
+.mergingSyntax {
+  height: 220px !important;
 }

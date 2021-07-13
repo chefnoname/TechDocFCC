@@ -210,7 +210,7 @@
             <div class="returnValue">
                 <h3 id="return"> <a href="#return" class="bookmark"> Return value </a> </h3>
 
-                <p>The new <span class="codeHighlight"><code>length</code></span> property of the object upon which the
+                <p>The new <code class="codeHighlight">length</code> property of the object upon which the
                     method was called.</p>
             </div>
 
@@ -219,9 +219,8 @@
 
                 <p>The <code>push</code> method appends values to an array.</p>
 
-                <p> <code> push</code> is intentionally generic. This method can be used with <span
-                        class="codeHighlight">
-                        <code> call()</code></span> or <span class="codeHighlight"> <code> apply()</code></span> on
+                <p> <code> push</code> is intentionally generic. This method can be used with
+                    <code class="codeHighlight"> call()</code> or <code class="codeHighlight">apply()</code> on
                     objects resembling
                     arrays. The <code> push</code> method relies on a <code>length</code> property to determine where to
                     start
@@ -254,16 +253,54 @@
                     <div class="exampleCode">
                         <code> <span class="blue"> let </span> sports = [<span class="green">'soccer'</span>,<span class="green">'baseball'</span>] </code>
                         <code><span class="blue">let</span> total = sports.<span class="pink">push</span>(<span class="green">'football'</span>, <span class="green">'swimming'</span>) </code>
+                        <br>
                         <code>console.<span class="pink">log</span>(sports) <span class="grey">// ['soccer', 'baseball', 'football', 'swimming']</span> </code>
                         <code>console.<span class="pink">log</span>(total)<span class="grey"> // 4 </span></code>
                     </div>
 
-                    <div class="copyExamples copyClipboard">
+                    <div class="copyClipboard">
                         <i class="fas fa-copy clipboardExample"></i>
                         <div class="textBubble exampleBubble">
                             <p>Copied!</p>
                         </div>
                     </div>
+                </div>
+
+                <h3 id="merging"> <a href="#merging" class="bookmark">Merging two arrays</a> </h3>
+
+                <p>This example uses <code class="codeHighlight">apply()</code> to push all elements from a
+                    second
+                    array.</p>
+
+                <p>Do <em>not</em> use this method if the second array (<code>moreVegs</code> in the example) is very
+                    large because the
+                    maximum number of parameters that one function can take is limited in practice. See <code
+                        class="codeHighlight">apply()</code> for more
+                    details.</p>
+
+                <div class="syntax mergingSyntax">
+
+
+                    <div class="mergingCode">
+                        <code> <span class="blue">  let </span>vegetables = [<span class="green">'parsnip'</span>, <span class="green">'potato'</span>] </code>
+                        <code>  <span class="blue"> let</span> moreVegs = [<span class="green">'celery'</span>, <span class="green">'beetroot'</span>]</code>
+                        <br>
+                        <code> <span class="grey">  // Merge the second array into the first one </code>
+                        <code><span class="grey">  // Equivalent to vegetables.push('celery', 'beetroot')</code></span>
+                        <code>  <span
+                                class="pink">Array</span>.prototype.<span class="pink">push</span>.<span class="pink">apply</span>(vegetables, moreVegs)</code>
+                        <br>
+                        <code>console.<span class='pink'>log</span>(vegetables)<span class="grey"> // ['parsnip', 'potato', 'celery', 'beetroot']</span> </code>
+
+                    </div>
+
+                    <div class="copyClipboard">
+                        <i class="fas fa-copy clipboardMerging"></i>
+                        <div class="textBubble mergingBubble">
+                            <p>Copied!</p>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>

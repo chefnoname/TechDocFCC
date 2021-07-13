@@ -142,3 +142,21 @@ clipboardExample.addEventListener("click", () => {
       Alert("Failed ");
     });
 });
+
+const thirdExample = document.querySelector(".mergingCode");
+const mergingBubble = document.querySelector(".mergingBubble");
+const clipboardMerging = document.querySelector(".clipboardMerging");
+
+clipboardMerging.addEventListener("click", () => {
+  navigator.clipboard
+    .writeText(thirdExample.innerText)
+    .then(() => {
+      mergingBubble.style.display = "block";
+      setTimeout(() => {
+        mergingBubble.style.display = "none";
+      }, 1000);
+    })
+    .catch(() => {
+      Alert("Failed ");
+    });
+});
