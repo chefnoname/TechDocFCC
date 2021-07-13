@@ -13,11 +13,6 @@ h2 {
   font-size: 30px;
 }
 
-h2:hover {
-  cursor: pointer;
-  text-decoration: underline;
-}
-
 p {
   font-family: "Noto Sans JP", sans-serif;
 }
@@ -45,6 +40,11 @@ a:hover {
 .bookmark:active {
   text-decoration: none;
   color: inherit;
+}
+
+.bookmark:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 code {
@@ -331,8 +331,20 @@ code {
   flex-direction: column;
 }
 
-.syntaxCode code .pink {
+.pink {
   color: #b54248;
+}
+
+.blue {
+  color: #00458b;
+}
+
+.green {
+  color: #276738;
+}
+
+.grey {
+  color: #626262;
 }
 
 .syntax code {
@@ -360,8 +372,8 @@ code {
   background-color: black;
   border-radius: 5px;
   height: 30px;
-  padding-left: 5px;
-  padding-right: 5px;
+  /* padding-left: 5px;
+  padding-right: 5px; */
 }
 
 .textBubble p {
@@ -370,7 +382,8 @@ code {
 }
 
 .parameters h3,
-.returnValue h3 {
+.returnValue h3,
+.examples h3 {
   margin-top: 30px;
   margin-bottom: 15px;
   font-family: "Roboto Slab", serif;
@@ -402,8 +415,22 @@ code {
   text-decoration: none;
 }
 
-.description p {
+.description p,
+.examples p {
   margin-top: 10px;
   margin-bottom: 20px;
   width: 85%;
+}
+
+.examples .syntax {
+  height: 130px;
+}
+
+.exampleCode {
+  display: flex;
+  flex-direction: column;
+}
+
+.exampleBubble {
+  /* padding-bottom: 20px !important; */
 }

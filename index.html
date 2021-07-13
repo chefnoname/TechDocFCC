@@ -200,7 +200,7 @@
 
 
             <div class="parameters">
-                <h3>Parameters</h3>
+                <h3 id="parameters"> <a class="bookmark" href="#parameters"> Parameters</a></h3>
 
                 <code>element<em>N</em></code>
 
@@ -208,7 +208,7 @@
             </div>
 
             <div class="returnValue">
-                <h3>Return value</h3>
+                <h3 id="return"> <a href="#return" class="bookmark"> Return value </a> </h3>
 
                 <p>The new <span class="codeHighlight"><code>length</code></span> property of the object upon which the
                     method was called.</p>
@@ -236,6 +236,36 @@
                     suitable in applications of this
                     method, as strings are immutable. Similarly for the native, Array-like object <span
                         class="codeHighlight"> arguments</span>.</p>
+            </div>
+
+            <div class="examples">
+                <h2 class="syntaxTitle" id="examples"><a href="#examples" class="bookmark">Examples</a></h2>
+
+                <h3 id="examples"> <a href="#examples" class="bookmark">Adding elements to an array</a> </h3>
+
+                <p>The following code creates the <code>sports </code>array containing two elements, then appends two
+                    elements to it.
+                    The <code>total</code> variable contains the new length of the array.</p>
+
+
+                <div class="syntax">
+
+
+                    <div class="exampleCode">
+                        <code> <span class="blue"> let </span> sports = [<span class="green">'soccer'</span>,<span class="green">'baseball'</span>] </code>
+                        <code><span class="blue">let</span> total = sports.<span class="pink">push</span>(<span class="green">'football'</span>, <span class="green">'swimming'</span>) </code>
+                        <code>console.<span class="pink">log</span>(sports) <span class="grey">// ['soccer', 'baseball', 'football', 'swimming']</span> </code>
+                        <code>console.<span class="pink">log</span>(total)<span class="grey"> // 4 </span></code>
+                    </div>
+
+                    <div class="copyExamples copyClipboard">
+                        <i class="fas fa-copy clipboardExample"></i>
+                        <div class="textBubble exampleBubble">
+                            <p>Copied!</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
 

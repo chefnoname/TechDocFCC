@@ -125,4 +125,20 @@ clipboard.addEventListener("click", () => {
     });
 });
 
-console.log(codeExample.innerText);
+const secondExample = document.querySelector(".exampleCode");
+const exampleBubble = document.querySelector(".exampleBubble");
+const clipboardExample = document.querySelector(".clipboardExample");
+
+clipboardExample.addEventListener("click", () => {
+  navigator.clipboard
+    .writeText(secondExample.innerText)
+    .then(() => {
+      exampleBubble.style.display = "block";
+      setTimeout(() => {
+        exampleBubble.style.display = "none";
+      }, 1000);
+    })
+    .catch(() => {
+      Alert("Failed ");
+    });
+});
