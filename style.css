@@ -622,7 +622,7 @@ code {
 .links {
   display: flex;
   justify-content: space-between;
-  /* background-color: #00458b; */
+  border-bottom: 1px solid white;
 }
 
 .links p {
@@ -631,7 +631,8 @@ code {
   font-weight: 100;
 }
 
-.links p:hover {
+.links p:hover,
+.termsAndConditions p:hover {
   cursor: pointer;
   text-decoration: underline;
 }
@@ -641,6 +642,7 @@ code {
   justify-content: space-between;
   width: 100px;
   margin-top: 50px;
+  margin-bottom: 30px;
 }
 .socials i {
   margin-top: 5px;
@@ -657,4 +659,21 @@ code {
 
 .rightSocial {
   width: 120px;
+}
+
+.legalities {
+  margin-top: 25px;
+  font-weight: 100;
+}
+
+.termsAndConditions {
+  margin-top: 20px;
+  display: flex;
+  width: 250px;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.termsAndConditions p {
+  font-size: 14px;
 }
