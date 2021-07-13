@@ -9,6 +9,15 @@ h2 {
   font-family: "Roboto Slab", serif;
 }
 
+h3 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  font-size: 25px;
+}
+
 h2 {
   font-size: 30px;
 }
@@ -151,7 +160,7 @@ code {
 }
 
 .show {
-  display: block;
+  display: block !important;
 }
 
 .searchMDNBox {
@@ -384,17 +393,6 @@ code {
   margin-top: 3px;
 }
 
-.parameters h3,
-.returnValue h3,
-.examples h3 {
-  margin-top: 30px;
-  margin-bottom: 15px;
-  font-family: "Roboto Slab", serif;
-  font-weight: 400;
-  letter-spacing: 1.5px;
-  font-size: 30px;
-}
-
 .parameters code {
   font-weight: 900;
   font-size: 16px;
@@ -456,7 +454,7 @@ code {
 }
 
 .specificationsBox {
-  border-left: 6px solid green;
+  border-left: 6px solid #276738;
   flex-direction: column;
   height: 150px;
   padding: 0px;
@@ -474,4 +472,136 @@ code {
   padding: 15px;
   line-height: 35px;
   text-decoration: underline;
+}
+
+.browserInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.browserLink {
+  width: 400px;
+  margin-left: 500px;
+}
+
+.browserLink i {
+  color: black;
+}
+
+.browserInfo img {
+  margin-top: 5px;
+  height: 100%;
+  width: 100%;
+}
+
+#browser,
+#seeAlso {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.support {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.supportBox {
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: #eee;
+  border: 1px solid black;
+}
+
+.seeAlsoList {
+  margin-left: 50px;
+}
+
+.seeAlsoList li {
+  list-style-type: disc;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  line-height: 15px;
+}
+
+.problems {
+  margin-top: 50px;
+  margin-left: 30px;
+  height: 400px;
+  width: 100%;
+  background-color: #eee;
+  padding: 10px;
+}
+
+.problems h3,
+.lastMod {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.problems ul {
+  margin-left: 70px;
+  margin-bottom: 20px;
+}
+
+.differentLangBox {
+  margin-left: 20px;
+}
+
+.changeBtn {
+  height: 30px;
+  width: 110px;
+  margin-left: 15px;
+  background-color: #216b82;
+  border-radius: 5px;
+  color: white;
+}
+
+.changeBtn p {
+  margin-top: 5px;
+  margin-left: 5px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.changeBtn:hover {
+  cursor: pointer;
+  background-color: #338ca7;
+}
+
+.whatLang {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.whatLang i {
+  margin-right: 5px;
+  margin-top: 2px;
+}
+
+.whatLang,
+.languages {
+  background-color: white;
+  border: 1px solid black;
+  width: 180px;
+}
+
+.whatLang {
+  height: 30px;
+  padding: 5px;
+}
+
+.languages {
+  height: 350px;
+  padding: 10px;
+  display: none;
+}
+
+.languages li {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.langDropdown {
+  display: flex;
 }

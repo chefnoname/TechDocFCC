@@ -14,6 +14,9 @@ const firstTech = document.querySelector(".firstTech");
 const firstRef = document.querySelector(".firstRef");
 const firstFeed = document.querySelector(".firstFeed");
 
+const langDropdown = document.querySelector(".whatLang");
+const langContentBox = document.querySelector(".languages");
+
 // DROP DOWN MENUS
 
 techDropdown.addEventListener("click", () => {
@@ -93,6 +96,12 @@ firstRef.addEventListener("mouseout", () => {
 firstFeed.addEventListener("mouseout", () => {
   firstFeed.classList.remove("firstFeed");
 });
+
+langDropdown.addEventListener("click", () => {
+  langContentBox.classList.toggle("show");
+});
+
+console.log(langContentBox, langDropdown);
 
 // CODE EXAMPLE
 
