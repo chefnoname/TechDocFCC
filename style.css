@@ -605,3 +605,56 @@ code {
 .langDropdown {
   display: flex;
 }
+
+.footerContent {
+  height: 650px;
+  background-color: #212121;
+  color: white;
+  padding: 30px;
+}
+
+.footerContent img {
+  height: 10%;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: #00458b; */
+}
+
+.links p {
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.links p:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  margin-top: 50px;
+}
+.socials i {
+  margin-top: 5px;
+}
+
+.socials i:hover {
+  cursor: pointer;
+}
+
+.rightSideLinks {
+  text-align: left;
+  margin-right: 35%;
+}
+
+.rightSocial {
+  width: 120px;
+}
