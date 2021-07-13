@@ -160,3 +160,21 @@ clipboardMerging.addEventListener("click", () => {
       Alert("Failed ");
     });
 });
+
+const fourthExample = document.querySelector(".objectCode");
+const objectBubble = document.querySelector(".objectBubble");
+const clipboardObject = document.querySelector(".clipboardObject");
+
+clipboardObject.addEventListener("click", () => {
+  navigator.clipboard
+    .writeText(fourthExample.innerText)
+    .then(() => {
+      objectBubble.style.display = "block";
+      setTimeout(() => {
+        objectBubble.style.display = "none";
+      }, 1000);
+    })
+    .catch(() => {
+      Alert("Failed ");
+    });
+});

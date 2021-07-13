@@ -180,7 +180,7 @@
 
             <h2 class="syntaxTitle" id="syntax"> <a class="bookmark" href="#syntax">Syntax</a></h2>
 
-            <div class="syntax">
+            <div class="codeBox">
 
                 <div class="syntaxCode">
                     <code><span class="pink">push</span>(element0)</code>
@@ -247,7 +247,7 @@
                     The <code>total</code> variable contains the new length of the array.</p>
 
 
-                <div class="syntax">
+                <div class="codeBox exampleCodeBox">
 
 
                     <div class="exampleCode">
@@ -278,7 +278,7 @@
                         class="codeHighlight">apply()</code> for more
                     details.</p>
 
-                <div class="syntax mergingSyntax">
+                <div class="codeBox mergingSyntax">
 
 
                     <div class="mergingCode">
@@ -301,6 +301,69 @@
                         </div>
                     </div>
 
+                </div>
+
+                <h3 id="object"> <a href="#object" class="bookmark">Using an object in an array-like fashion</a> </h3>
+
+                <p>As mentioned above, <code>push</code> is intentionally generic, and we can use that to our advantage.
+                    <code>Array.prototype.push</code> can work on an object just fine, as this example shows.
+                </p>
+                <p>Note that we don't create an array to store a collection of objects. Instead, we store the collection
+                    on the object itself and use <code>call</code> on <code>Array.prototype.push</code> to trick the
+                    method into thinking we are
+                    dealing with an array—and it just works, thanks to the way JavaScript allows us to establish the
+                    execution context in any way we want.</p>
+
+                <div class="codeBox objectSyntax">
+
+                    <div class="objectCode">
+
+                        <pre>
+    <code><span class="blue">let</span> obj = {</code>
+        <code>length: 0,</code>
+        <br>
+        <code><span class="pink">addElem</span>: <span class="blue">function</span><span class="pink"> addElem</span>(elem) {</code>
+            <code><span class="grey">// obj.length is automatically incremented </code></span>
+            <code><span class="grey">// every time an element is added.</span></code>
+            <code><span class="grey">[]</span>.<span class="pink">push</span>.<span class="pink">call</span>(<span class="blue">this</span>, elem)</code>
+        <code>  } </code>
+    <code>  } </code>
+                        <br>
+    <code> <span class="grey"> // Let's add some empty objects just to illustrate. </span></code>
+    <code>obj.<span class="pink">addElem</span><span class="grey">({})</span></code>
+    <code>obj.<span class="pink">addElem</span><span class="grey">({})</span></code>
+    <code>console.<span class="pink">log</span><span class="grey">(</span>obj.length<span class="grey">)</span></code>
+    <code><span class="grey"> // → 2 </span></code>
+                    </pre>
+                    </div>
+
+                    <div class="copyClipboard">
+                        <i class="fas fa-copy clipboardObject"></i>
+                        <div class="textBubble objectBubble">
+                            <p>Copied!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <p>Note that although <code>obj</code> is not an array, the method <code>push</code> successfully
+                    incremented <code>obj</code>'s <code>length</code>
+                    property just like if we were dealing with an actual array.</p>
+            </div>
+
+            <div class="specifications">
+                <h2 class="syntaxTitle" id="specifications"><a href="#specifications"
+                        class="bookmark">Specifications</a></h2>
+
+                <div class="codeBox specificationsBox">
+                    <p class="subTitle">Specification</p>
+
+                    <div class="ecmaLang">
+                        <a href="#">ECMAScript Language Specification (ECMAScript)</a>
+
+                        <div class="arrayLink">
+                            <a href="#" style="font-size: 14px;"># sec-array.prototype.push</a>
+                        </div>
+                    </div>
                 </div>
 
             </div>
