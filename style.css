@@ -238,8 +238,9 @@ code {
 
 .leftSideContent {
   flex: 1;
-  /* background-color: indianred; */
   padding: 20px;
+  /* background-color: #276738; */
+  width: 300px;
 }
 
 .leftSideContent h1 {
@@ -270,15 +271,30 @@ code {
 }
 
 .relatedTopics li {
-  font-family: "Play", sans-serif;
+  /* font-family: "Play", sans-serif; */
   color: rgb(0, 68, 255);
+  font-size: 15px;
   margin-left: 25px;
-  font-size: 14px;
   margin-top: 10px;
+  margin-bottom: 18px;
+  background-color: none;
 }
 
+.relatedTopics p:hover,
+.relatedTopics li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.imageHeadings {
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+/*  RIGHT SIDE OF THE PAGE */
+
 .rightSideContent {
-  flex: 3;
+  flex: 4;
   padding: 30px;
 }
 
@@ -360,12 +376,12 @@ code {
   color: #626262;
 }
 
-.syntax code {
+.codeBox code {
   margin-bottom: 5px;
   font-size: 16px;
 }
 
-.syntax:hover i {
+.codeBox:hover i {
   color: black;
   cursor: pointer;
 }
@@ -526,9 +542,9 @@ code {
 
 .problems {
   margin-top: 50px;
-  margin-left: 30px;
+  margin-left: 0px;
   height: 400px;
-  width: 100%;
+  width: 103.3%;
   background-color: #eee;
   padding: 10px;
 }
@@ -627,7 +643,7 @@ code {
 
 .links p {
   margin-bottom: 30px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 100;
 }
 
