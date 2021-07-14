@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&display=swap" rel="stylesheet">
@@ -24,81 +25,87 @@
 </head>
 
 <body>
+
+    <div class="mobileMenu">
+        <i class="fas fa-bars mobileClick"></i>
+    </div>
+
     <div class="topContent">
         <img src="assets/mdn_logo.png" alt="">
 
+        <div class="mobileBox">
 
-        <div class="techDropdown">
+            <div class="techDropdown">
 
-            <div class="titleDropDown techDrop">
+                <div class="titleDropDown techDrop">
 
-                <i class="fas fa-caret-right techCaret"></i>
-                <p>Technologies</p>
+                    <i class="fas fa-caret-right techCaret"></i>
+                    <p>Technologies</p>
+
+                </div>
+
+                <div class="dropDownContent techContent">
+                    <p class="firstTech">Technologies Overview</p>
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>JavaScript</p>
+                    <p>Graphics</p>
+                    <p>HTTP</p>
+                    <p>APIs</p>
+                    <p>Browser Extensions</p>
+                    <p>MathML</p>
+                </div>
 
             </div>
 
-            <div class="dropDownContent techContent">
-                <p class="firstTech">Technologies Overview</p>
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>JavaScript</p>
-                <p>Graphics</p>
-                <p>HTTP</p>
-                <p>APIs</p>
-                <p>Browser Extensions</p>
-                <p>MathML</p>
+            <div class="referenceGuidesDropdown">
+
+                <div class="titleDropDown refDrop">
+
+                    <i class="fas fa-caret-right refCaret"></i>
+                    <p>Reference & Guides</p>
+
+                </div>
+
+                <div class="dropDownContent refContent">
+                    <p class="firstRef">Learn web development</p>
+                    <p>Tutorials</p>
+                    <p>References</p>
+                    <p>Developer Guides</p>
+                    <p>Accessibility</p>
+                    <p>Game Development</p>
+                    <p>...more docs</p>
+                </div>
+            </div>
+
+            <div class="feedbackDropdown">
+
+                <div class="titleDropDown feedDrop">
+
+                    <i class="fas fa-caret-right feedCaret"></i>
+                    <p>Feedback</p>
+
+
+                </div>
+
+                <div class="dropDownContent feedContent">
+                    <p class="firstFeed">Send Feedback</p>
+                    <p>Contribute to MDN</p>
+                    <p>Report a content issue</p>
+                    <p>Report a platform issue</p>
+                </div>
+            </div>
+
+
+
+            <div class="searchMDNBox">
+                <input type="text" placeholder="Search MDN">
+
+                <p class="signIn">Sign in</p>
+                <i class="fas fa-search"></i>
             </div>
 
         </div>
-
-        <div class="referenceGuidesDropdown">
-
-            <div class="titleDropDown refDrop">
-
-                <i class="fas fa-caret-right refCaret"></i>
-                <p>Reference & Guides</p>
-
-            </div>
-
-            <div class="dropDownContent refContent">
-                <p class="firstRef">Learn web development</p>
-                <p>Tutorials</p>
-                <p>References</p>
-                <p>Developer Guides</p>
-                <p>Accessibility</p>
-                <p>Game Development</p>
-                <p>...more docs</p>
-            </div>
-        </div>
-
-        <div class="feedbackDropdown">
-
-            <div class="titleDropDown feedDrop">
-
-                <i class="fas fa-caret-right feedCaret"></i>
-                <p>Feedback</p>
-
-
-            </div>
-
-            <div class="dropDownContent feedContent">
-                <p class="firstFeed">Send Feedback</p>
-                <p>Contribute to MDN</p>
-                <p>Report a content issue</p>
-                <p>Report a platform issue</p>
-            </div>
-        </div>
-
-
-
-        <div class="searchMDNBox">
-            <input type="text" placeholder="Search MDN">
-
-            <p class="signIn">Sign in</p>
-            <i class="fas fa-search"></i>
-        </div>
-
-
     </div>
 
     <div class="pathwayStrip">

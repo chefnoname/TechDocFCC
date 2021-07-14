@@ -1,0 +1,77 @@
+@media only screen and (max-width: 426px) and (min-width: 320px) {
+  .mobileMenu {
+    display: block;
+    width: 280px;
+    height: 200px;
+    /* background-color: #8a2be2; */
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    z-index: 200;
+  }
+
+  .mobileMenu i {
+    font-size: 25px;
+    margin-top: 35px;
+  }
+
+  .mobileBox {
+    position: absolute;
+    margin-top: 40px;
+    margin-right: 20px;
+    flex-direction: column;
+    background-color: white;
+    width: 320px;
+    padding-left: 30px;
+    visibility: hidden;
+  }
+
+  .showMobile {
+    visibility: visible;
+  }
+
+  .topContent {
+    flex-direction: column;
+    /* position: fixed; */
+    padding-left: 0;
+  }
+
+  .topContent img {
+    height: 40px;
+    width: 160px;
+    padding-left: 30px;
+  }
+
+  .techDropdown,
+  .referenceGuidesDropdown,
+  .feedbackDropdown {
+    order: 2;
+    /* display: none; */
+    z-index: 200;
+  }
+
+  .searchMDNBox {
+    flex-direction: column;
+    order: 1;
+    /* display: none; */
+  }
+
+  .searchMDNBox i {
+    right: 45%;
+  }
+
+  .signIn {
+    display: none;
+  }
+
+  .dropDownContent {
+    width: 320px;
+    position: relative;
+    right: 30px;
+    border-radius: 0px;
+    border: none;
+    box-shadow: none;
+    padding: 5px 30px;
+  }
+}

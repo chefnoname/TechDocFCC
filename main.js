@@ -18,7 +18,7 @@ const langDropdown = document.querySelector(".whatLang");
 const langContentBox = document.querySelector(".languages");
 
 // DROP DOWN MENUS
-
+console.log(techDropdown);
 techDropdown.addEventListener("click", () => {
   techContentBox.classList.toggle("show");
   techCaret.classList.toggle("fa-caret-right");
@@ -37,7 +37,7 @@ techDropdown.addEventListener("click", () => {
     feedCaret.classList.toggle("fa-caret-right");
     feedCaret.classList.toggle("fa-caret-down");
   }
-
+  console.log("im working");
   firstTech.classList.add("firstTech");
 });
 
@@ -186,4 +186,21 @@ clipboardObject.addEventListener("click", () => {
     .catch(() => {
       Alert("Failed ");
     });
+});
+
+// MOBILE JS
+
+const mobileClick = document.querySelector(".mobileClick");
+const searchBox = document.querySelector(".searchMDNBox");
+const techDropDownBox = document.querySelector(".techDropdown");
+const refGuideDropDownBox = document.querySelector(".referenceGuidesDropdown");
+const feedbackDropDownBox = document.querySelector(".feedbackDropdown");
+
+const mobileBox = document.querySelector(".mobileBox");
+
+mobileClick.addEventListener("click", () => {
+  mobileBox.classList.toggle("showMobile");
+  // refGuideDropDownBox.classList.toggle("show");
+  // feedbackDropDownBox.classList.toggle("show");
+  // searchBox.classList.toggle("show");
 });

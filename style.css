@@ -65,20 +65,19 @@ code {
   margin-bottom: 30px;
   padding: 30px;
   width: 100%;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .topContent img {
   height: 60px;
-  width: 500px;
+  width: 230px;
   margin-right: 30px;
-  flex: 1;
+  /* flex: 1; */
 }
 
-.techDropdown,
-.referenceGuidesDropdown,
-.feedbackDropdown {
-  flex: 1;
+.mobileBox {
+  display: flex;
+  flex-direction: row;
 }
 
 .titleDropDown {
@@ -117,7 +116,6 @@ code {
 .dropDownContent {
   display: none;
   font-size: 14px;
-  /* margin-left: 20px; */
   font-weight: 900;
   color: rgba(54, 85, 224, 0.904);
   background-color: white;
@@ -169,6 +167,7 @@ code {
   /* background-color: violet; */
   width: 450px;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   position: relative;
   flex: 3;
@@ -177,7 +176,7 @@ code {
 .searchMDNBox input {
   margin-top: 10px;
   border-color: black;
-  width: 300px;
+  width: 270px;
   height: 40px;
   padding: 10px;
   font-size: 16px;
@@ -185,7 +184,7 @@ code {
 
 .searchMDNBox i {
   position: absolute;
-  right: 45%;
+  right: 50%;
   top: 35%;
   font-size: 20px;
 }
@@ -536,6 +535,7 @@ code {
 
 .seeAlsoList li {
   list-style-type: disc;
+  font-size: 16px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   line-height: 15px;
 }
@@ -692,4 +692,10 @@ code {
 
 .termsAndConditions p {
   font-size: 14px;
+}
+
+/* MOBILE DISPLAY NONES */
+
+.mobileMenu {
+  display: none;
 }
