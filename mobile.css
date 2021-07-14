@@ -24,7 +24,9 @@
     background-color: white;
     width: 320px;
     padding-left: 30px;
+    box-shadow: 10px 10px 10px black;
     visibility: hidden;
+    z-index: 200;
   }
 
   .showMobile {
@@ -49,6 +51,10 @@
     order: 2;
     /* display: none; */
     z-index: 200;
+  }
+
+  .feedbackDropdown {
+    margin-bottom: 10px;
   }
 
   .searchMDNBox {
@@ -138,13 +144,17 @@
 
   .codeBox code {
     margin-bottom: 5px;
-    width: 500px;
+    width: 700px;
   }
 
   .copyClipboard {
     position: relative;
-    right: 140%;
+    right: 240%;
     text-align: left;
+  }
+
+  .objectSyntax .copyClipboard {
+    right: 145%;
   }
 
   .copyClipboard i {

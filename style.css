@@ -394,7 +394,7 @@ code {
   display: flex;
   flex-direction: column;
   background-color: #eee;
-  height: 50px;
+  height: 0px;
 }
 
 .textBubble {
