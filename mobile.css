@@ -74,4 +74,85 @@
     box-shadow: none;
     padding: 5px 30px;
   }
+
+  .pathwayStrip {
+    width: 320px;
+  }
+
+  #pathway1,
+  #pathway1a,
+  #pathway2,
+  #pathway2a,
+  #pathway3,
+  #pathway3a,
+  #pathway4,
+  #pathway4a,
+  #pathway6,
+  #pathway7 {
+    display: none;
+  }
+
+  #pathway5 {
+    display: block;
+  }
+
+  .changeLang {
+    margin-left: 180px;
+  }
+
+  .changeLang a {
+    display: none;
+  }
+
+  .mainContent {
+    flex-direction: column-reverse;
+  }
+
+  .tableContent {
+    display: none;
+  }
+
+  .rightSideContent h1 {
+    font-size: 25px;
+  }
+
+  .rightSideContent h2 {
+    font-size: 20px;
+  }
+
+  .rightSideContent h3 {
+    font-size: 20px;
+  }
+
+  .rightSideContent p {
+    width: 100%;
+  }
+
+  .demoTitle p {
+    font-size: 12px;
+  }
+
+  .codeBox {
+    overflow-x: scroll;
+  }
+
+  .codeBox code {
+    margin-bottom: 5px;
+    width: 500px;
+  }
+
+  .copyClipboard {
+    position: relative;
+    right: 140%;
+    text-align: left;
+  }
+
+  .copyClipboard i {
+    text-align: left;
+  }
+
+  .textBubble {
+    position: relative;
+    right: 40px;
+  }
 }

@@ -127,7 +127,7 @@ clipboard.addEventListener("click", () => {
       textBubble.style.display = "block";
       setTimeout(() => {
         textBubble.style.display = "none";
-      }, 1000);
+      }, 10000);
     })
     .catch(() => {
       Alert("Failed ");

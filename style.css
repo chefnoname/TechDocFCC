@@ -393,6 +393,8 @@ code {
 .copyClipboard {
   display: flex;
   flex-direction: column;
+  background-color: #eee;
+  height: 50px;
 }
 
 .textBubble {
@@ -697,5 +699,9 @@ code {
 /* MOBILE DISPLAY NONES */
 
 .mobileMenu {
+  display: none;
+}
+
+#pathway5 {
   display: none;
 }
