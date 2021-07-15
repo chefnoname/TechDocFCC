@@ -200,7 +200,16 @@ const mobileBox = document.querySelector(".mobileBox");
 
 mobileClick.addEventListener("click", () => {
   mobileBox.classList.toggle("showMobile");
-  // refGuideDropDownBox.classList.toggle("show");
-  // feedbackDropDownBox.classList.toggle("show");
-  // searchBox.classList.toggle("show");
+});
+
+// TABLE OF CONTENTS DROPDOWN MENU
+const mobileTableTitle = document.querySelector(".mobileTableTitle");
+const mobileTableList = document.querySelector(".mobileTableList");
+const mobileCaret = document.querySelector(".mobileCaret");
+
+mobileTableTitle.addEventListener("click", () => {
+  mobileTableList.classList.toggle("show");
+
+  mobileCaret.classList.toggle("fa-caret-right");
+  mobileCaret.classList.toggle("fa-caret-down");
 });

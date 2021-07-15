@@ -49,7 +49,7 @@
   .referenceGuidesDropdown,
   .feedbackDropdown {
     order: 2;
-    /* display: none; */
+
     z-index: 200;
   }
 
@@ -205,5 +205,59 @@
 
   .changeBtn p {
     margin-left: 0px;
+  }
+
+  .bookyList li {
+    font-size: 12px;
+  }
+
+  .footerContent {
+    height: 800px;
+    width: 320px;
+  }
+
+  .footerContent img {
+    height: 8%;
+    width: 95%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    border: none;
+  }
+
+  .links p {
+    margin-bottom: 10px;
+  }
+
+  .mobileContents {
+    display: block;
+    padding: 30px;
+    padding-bottom: 0;
+  }
+
+  .mobileTableTitle {
+    display: flex;
+  }
+
+  .mobileTableTitle a {
+    margin-left: 5px;
+  }
+
+  .mobileTableList {
+    margin-top: 10px;
+    border: 1px solid blue;
+    padding: 15px;
+    width: 200px;
+    position: absolute;
+    background-color: #fff;
+    display: none;
+  }
+
+  .mobileTableList ul li {
+    margin-bottom: 20px;
   }
 }

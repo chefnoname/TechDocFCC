@@ -65,7 +65,7 @@ code {
   margin-bottom: 30px;
   padding: 30px;
   width: 100%;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 .topContent img {
@@ -707,5 +707,9 @@ code {
 }
 
 .mobilePic {
+  display: none;
+}
+
+.mobileContents {
   display: none;
 }
