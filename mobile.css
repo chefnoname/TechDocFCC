@@ -176,6 +176,10 @@
     display: none;
   }
 
+  .specificationsBox {
+    border-color: #eee;
+  }
+
   .mobilePic {
     display: block;
   }
@@ -317,5 +321,67 @@
 
   .footerContent img {
     height: 10%;
+  }
+}
+
+/* MOBILE LARGE SETTINGS */
+
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  .mobileMenu {
+    width: 380px;
+    /* background-color: #8a2be2; */
+  }
+
+  .mobileBox {
+    width: 425px;
+  }
+
+  .topContent img {
+    height: 60px;
+    width: 230px;
+  }
+
+  .searchMDNBox input {
+    width: 350px;
+  }
+
+  .searchMDNBox i {
+    right: 28%;
+  }
+
+  .pathwayStrip {
+    width: 425px;
+  }
+
+  .changeLang {
+    margin-left: 280px;
+  }
+
+  .copyClipboard {
+    right: 130%;
+  }
+
+  .objectSyntax .copyClipboard {
+    right: 70%;
+  }
+
+  .problems {
+    width: 426px;
+  }
+
+  .langDropdown {
+    flex-direction: row;
+  }
+
+  .changeBtn {
+    margin-left: 10px;
+  }
+
+  .footerContent {
+    width: 425px;
+  }
+
+  .footerContent img {
+    height: 13%;
   }
 }
