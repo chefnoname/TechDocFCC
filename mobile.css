@@ -320,7 +320,8 @@
   }
 
   .footerContent img {
-    height: 10%;
+    height: 8%;
+    width: 53%;
   }
 }
 
@@ -382,6 +383,7 @@
   }
 
   .footerContent img {
-    height: 13%;
+    height: 5%;
+    width: 40%;
   }
 }
