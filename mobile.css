@@ -261,3 +261,61 @@
     margin-bottom: 20px;
   }
 }
+
+/* MOBILE MEDIUM SIZING */
+
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  .mobileMenu {
+    width: 330px;
+    /* background-color: #8a2be2; */
+  }
+
+  .mobileBox {
+    width: 375px;
+  }
+
+  .topContent img {
+    width: 180px;
+  }
+
+  .searchMDNBox input {
+    width: 300px;
+  }
+
+  .searchMDNBox i {
+    right: 38%;
+  }
+
+  .pathwayStrip {
+    width: 375px;
+  }
+
+  .changeLang {
+    margin-left: 230px;
+  }
+
+  .copyClipboard {
+    right: 170%;
+  }
+
+  .objectSyntax .copyClipboard {
+    right: 100%;
+  }
+
+  .problems {
+    width: 376px;
+  }
+
+  .lastMod {
+    margin-left: 5px;
+  }
+
+  .footerContent {
+    height: 800px;
+    width: 375px;
+  }
+
+  .footerContent img {
+    height: 10%;
+  }
+}
