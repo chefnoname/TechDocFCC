@@ -698,6 +698,10 @@ code {
 
 /* MOBILE DISPLAY NONES */
 
+.tabletPic {
+  display: none;
+}
+
 .mobileMenu {
   display: none;
 }

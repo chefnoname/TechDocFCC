@@ -1,0 +1,159 @@
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .topContent {
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+
+  .mobileBox {
+    display: flex;
+    width: 768px;
+    flex-wrap: wrap;
+  }
+
+  .techDropdown,
+  .referenceGuidesDropdown,
+  .feedbackDropdown {
+    margin-right: 43px;
+  }
+
+  .searchMDNBox {
+    flex: 1 0 100%;
+    width: 500px;
+    margin-top: 20px;
+    justify-content: space-between;
+  }
+
+  .searchMDNBox input {
+    width: 500px;
+  }
+
+  .searchMDNBox i {
+    right: 38%;
+  }
+
+  .signIn {
+    margin-right: 0px;
+  }
+
+  .pathwayStrip {
+    width: 768px;
+  }
+
+  #pathway1,
+  #pathway1a,
+  #pathway2,
+  #pathway2a,
+  #pathway3,
+  #pathway3a,
+  #pathway4,
+  #pathway4a,
+  #pathway6,
+  #pathway7 {
+    display: none;
+  }
+
+  #pathway5 {
+    display: block;
+  }
+
+  .changeLang {
+    margin-left: 480px;
+  }
+
+  .mainContent {
+    flex-direction: column-reverse;
+  }
+
+  .rightSideContent h1 {
+    font-size: 35px;
+  }
+
+  .rightSideContent h2 {
+    font-size: 25px;
+  }
+
+  .rightSideContent p {
+    font-size: 16px;
+    width: 700px;
+  }
+
+  .codeDemo {
+    width: 700px;
+  }
+
+  .codeMirrorTextarea {
+    width: 680px;
+  }
+
+  .specificationsBox {
+    border-color: #eee;
+  }
+
+  .browserLink {
+    margin-left: 0px;
+    margin-bottom: 20px;
+    /* width: 270px; */
+  }
+
+  .compatPic {
+    display: none;
+  }
+
+  .tabletPic {
+    display: block;
+  }
+
+  .problems {
+    width: 768px;
+    position: relative;
+    right: 35px;
+  }
+
+  .changeBtn {
+    width: 120px;
+  }
+
+  .changeBtn p {
+    font-size: 14px;
+    width: 110px;
+  }
+
+  .seeAlsoList li {
+    line-height: 18px;
+  }
+
+  .tableContent {
+    display: none;
+  }
+
+  .mobileContents {
+    display: block;
+    padding: 30px;
+    padding-bottom: 0;
+  }
+
+  .mobileTableTitle {
+    display: flex;
+  }
+
+  .mobileTableTitle a {
+    margin-left: 5px;
+  }
+
+  .mobileTableList {
+    margin-top: 10px;
+    border: 1px solid blue;
+    padding: 15px;
+    width: 200px;
+    position: absolute;
+    background-color: #fff;
+    display: none;
+    z-index: 200;
+  }
+
+  .mobileTableList ul li {
+    margin-bottom: 20px;
+  }
+}
+
+/* LAPTOP 1024PX */
