@@ -153,9 +153,10 @@
 
     </div>
 
-    <div class="mainContent">
+    <main class="mainContent" id="main-doc">
         <div class="leftSideContent">
-            <div class="tableContent">
+            <section class="tableContent main-section" id="table_of_contents">
+                <header>Table of contents</header>
                 <h1>Table of contents</h1>
                 <ul>
                     <li><a href="#syntax">Syntax</a></li>
@@ -166,7 +167,7 @@
                     <li><a href="#seeAlso">See also</a></li>
 
                 </ul>
-            </div>
+            </section>
 
             <div class="relatedTopics">
                 <h1>Related Topics</h1>
@@ -287,19 +288,43 @@
                 length of the
                 array.</p>
 
-            <div class="codeDemo">
-
-                <div class="demoTitle">
+            <section class="codeDemo main-section" id="code_demo">
+                <header>Code Demo</header>
+                <section class="demoTitle main-section" id="title_of_code_demo">
+                    <header>Title of code Demo</header>
                     <img src="/assets/mdn_demo.png" alt="">
                     <p>JavaScript Demo: Array.push()</p>
 
-                </div>
+                </section>
 
-                <div class="codeMirrorTextarea">
+                <section class="codeMirrorTextarea main-section" id="textarea">
+                    <header>textarea</header>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <code></code>
+                    <code></code>
+                    <code></code>
+                    <code></code>
+                    <code></code>
+                    <nav id="navbar">
+                        <header>NAVBAR</header>
+                        <a href="#table_of_contents" class="nav-link">table of contents</a>
+                        <a href="#code_demo" class="nav-link">code demo</a>
+                        <a href="#title_of_code_demo" class="nav-link">title of code demo</a>
+                        <a href="#textarea" class="nav-link">textarea</a>
+                        <a href="#first_example" class="nav-link">first example</a>
+                    </nav>
+                </section>
 
-                </div>
-
-            </div>
+            </section>
 
 
 
@@ -308,11 +333,11 @@
 
             <div class="codeBox">
 
-                <div class="syntaxCode">
+                <section class="syntaxCode" id="first_example">
                     <code><span class="pink">push</span>(element0)</code>
                     <code><span class="pink">push</span>(element0, element1)</code>
                     <code><span class="pink">push</span>(element0, element1, ... , elementN)</code>
-                </div>
+                </section>
 
                 <div class="copyClipboard">
                     <i class="fas fa-copy clipboard"></i>
@@ -572,7 +597,11 @@
 
         </div>
 
-    </div>
+        <section class="main-section" id="first_example">
+            <header>first example</header>
+        </section>
+
+    </main>
 
     <div class="footerContent">
         <img src="/assets/footerImg.png" alt="">
@@ -619,10 +648,12 @@
             </div>
         </div>
 
+
     </div>
 
 
     <script src="main.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
 </html>

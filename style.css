@@ -717,3 +717,12 @@ code {
 .mobileContents {
   display: none;
 }
+
+/* FREECODECAMP TEST PASS */
+
+.main-section header,
+.main-section p,
+.main-section code,
+.main-section nav {
+  display: none;
+}
