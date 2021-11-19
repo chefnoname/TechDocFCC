@@ -17,12 +17,20 @@
     <script src="https://kit.fontawesome.com/ac4f0e2ec9.js" crossorigin="anonymous"></script>
 
 
-    <script src="/plugin/codemirror/codemirror-5.62.0/lib/codemirror.js"></script>
+    <!-- <script src="lib/codemirror.js"></script>
     <link rel="stylesheet" href="/plugin/codemirror/codemirror-5.62.0/lib/codemirror.css">
     <link rel="stylesheet" href="/plugin/codemirror/codemirror-5.62.0/theme/mdn-like.css">
-    <script src="/plugin/codemirror/codemirror-5.62.0/mode/javascript/javascript.js"></script>
+    <script src="/plugin/codemirror/codemirror-5.62.0/mode/javascript/javascript.js"></script> -->
 
     <title>Tech Doc</title>
+
+    <link rel="stylesheet" href="lib/codemirror.css">
+    <script src="lib/codemirror.js"></script>
+    <script>
+        var editor = CodeMirror.fromTextArea(myTextarea, {
+            lineNumbers: true
+        });
+    </script>
 </head>
 
 <body>

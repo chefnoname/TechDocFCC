@@ -1,3 +1,4 @@
+import CodeMirror from "lib/codemirror";
 const techDropdown = document.querySelector(".techDrop");
 const techContentBox = document.querySelector(".techContent");
 const techCaret = document.querySelector(".techCaret");
